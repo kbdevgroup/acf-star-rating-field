@@ -1,5 +1,8 @@
 (function($){
 	function initialiseField( $el ) {
+		if (!window.starClasses) {
+			return;
+		}
 		var container = $el;
 		var starList = $("ul", container);
 		var starListItems = $("li", starList);
